@@ -56,7 +56,7 @@ System::Import() {
 }
 
 namespace() { :; }
-throw() { eval 'cat <<< "Exception: $e ($*)" 1>&2; read -s;'; }
+throw() {  eval 'cat <<< "Exception: $e ($*)" 1>&2; exit 1;'; }
 
 alias import="System::Import"
 alias source="System::ImportOne"
