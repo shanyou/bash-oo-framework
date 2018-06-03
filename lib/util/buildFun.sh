@@ -1,7 +1,7 @@
 # build docker function
 namespace util/buildFun
 # return $1 random tag
-gen_tag() {
+function gen_tag() {
     local  __resultvar=$1
     local date_str=$(date +"%Y%m%d.%H%M")
 

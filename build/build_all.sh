@@ -23,7 +23,7 @@ echo "__oo_payload=/tmp/$TAR_FILE" >> $FINAL_SCRIPT
 echo "" >> $FINAL_SCRIPT
 echo -n "echo \"" >> $FINAL_SCRIPT
 cat $TMP_BIN >> $FINAL_SCRIPT
-echo " \" | base64 -d > /tmp/$TAR_FILE" >> $FINAL_SCRIPT
+echo -n "\" | base64 -d > /tmp/$TAR_FILE" >> $FINAL_SCRIPT
 echo  "System::Bootstrap" >> $FINAL_SCRIPT
 
 #clean

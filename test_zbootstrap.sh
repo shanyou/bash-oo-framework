@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-
+#set -x
 ## BOOTSTRAP ##
 source "$( cd "${BASH_SOURCE[0]%/*}" && pwd )/oo.sh"
 import util/log
+import util/buildFun
+echo generate a new tag: $(gen_tag)
 # using colors:
 echo "$(UI.Color.Blue)I'm blue...$(UI.Color.Default)"
 
